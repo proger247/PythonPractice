@@ -16,10 +16,12 @@
 # a = 'dsfsfdsfdsfsdsdf'
 # print(a.find('stringw'))
 
+
+# Калькулятор прибыли по вкладу 
 amount = float(input("Введите сумму займа"))
 months = float(input("Введите срок займа(мес.)"))
 
-percent = 2.15  # годовая процентная ставка 
+percent = 4.18  # годовая процентная ставка 
 percent_for_month = 2.15 / 12
 profit = 0
 years = months % 12  # перевод количества месяцев в количество лет 
