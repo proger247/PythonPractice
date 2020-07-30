@@ -50,6 +50,7 @@
 
 # searching most popular letter in text 
 
+<<<<<<< HEAD
 text = "It sportsman earnestly ye preserved an on. Moment led family sooner cannot her window pulled any. Or raillery if improved landlord to speaking hastened differed he. Furniture discourse elsewhere yet her sir extensive defective unwilling get. Why resolution one motionless you him thoroughly. Noise is round to in it quick timed doors. Written address greatly get attacks inhabit pursuit our but. Lasted hunted enough an up seeing in lively letter. Had judgment out opinions property the supplied."
 text = text.replace(" ","").lower()
 most_popular = None
@@ -62,6 +63,49 @@ for symbol in text:
 		most_popular = symbol
 
 print(f'Наиболее встречаемая буква {most_popular} имеет {qty_most_popular} вхождений')
+=======
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget tempus est. Phasellus sit amet tristique neque. Sed luctus mi ut nisi suscipit placerat. Nunc nec diam dapibus, fermentum risus ut, ultrices orci. Integer non magna molestie nibh dapibus tincidunt. Quisque quis est quam. Sed dictum mi sit amet magna pretium blandit. Nulla tortor turpis, maximus vitae lobortis quis, varius sed metus. Nullam at congue metus. Pellentesque scelerisque, dui et luctus semper, odio diam scelerisque justo, nec tempor ex metus et enim. Praesent rhoncus nisl eget risus elementum ornare. Praesent tellus mauris, viverra vitae malesuada at, ornare id nisi. Vestibulum."
+
+text = text.replace(" ", "").lower().replace(".", "")
+text_set = set(text)
+most_popular = None
+second_popular  = None
+qty_most_popular = 0
+qty_second = 0
+
+# for symbol in text:
+# 	qty = text.count(symbol)
+# 	print(f"{symbol} --- {qty}")
+# 	if qty > qty_most_popular:
+# 		qty_most_popular = qty
+# 		most_popular = symbol
+# 	else: 
+# 		qty > qty_second
+# 		second_popular = symbol
+# 		qty_second = qty
+# 	text = text.replace(f"{symbol}", "")
+
+for symbol in text_set:
+	qty = text.count(symbol)
+	print(f"{symbol} --- {qty}")
+	if qty > qty_most_popular:
+		qty_most_popular = qty
+		most_popular = symbol
+		if qty_second > qty_most_popular:
+
+			qty_most_popular = qty_second
+			most_popular = symbol
+		else: 
+		
+			second_popular = symbol
+			qty_second = qty
+	# text = text.replace(f"{symbol}", "")
+
+print(f'Наиболее встречаемая буква {most_popular} имеет {qty_most_popular} вхождений')
+print(f'Вторая наиболее встречаемая буква {second_popular} имеет {qty_second} вхождений')
+# 
+
+>>>>>>> testbranch
 
 
 
