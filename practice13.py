@@ -10,3 +10,5 @@ for number in my_list:
 	if number % 2 != 0:
 		summary += number
 print(summary)
+
+

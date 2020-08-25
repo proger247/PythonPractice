@@ -1,0 +1,19 @@
+{
+    "firstname": "Ivan",
+    "lastname": "Komelkov",
+    "isAlive": "True",
+    "age": 32,
+    "address": {
+        "streetaddress": "Fontanka 20",
+        "city": "Saint-Petersburg",
+        "country": "Russian Federation",
+        "postalcode": "zip"
+    },
+    "phonenumbers": [
+        {
+            "type": "mob",
+            "number": "+7 923 023 2344"
+        }
+    ],
+    "spouse": null
+}
